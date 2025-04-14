@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мои лабораторные работы</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f2f5;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #007acc;
+      color: #fff;
+      padding: 1.5em;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+    header p {
+      margin: 0.5em 0 0 0;
+      font-size: 1em;
+      font-weight: 300;
+    }
+    nav {
+      background: #005f99;
+      padding: 1em;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1em;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 2em;
+      max-width: 800px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 2em;
+      background: white;
+      padding: 1.5em;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    input, button {
+      padding: 0.6em;
+      margin: 0.5em 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+    button {
+      background-color: #007acc;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #005f99;
+    }
+    .result {
+      margin-top: 1em;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Мои лабораторные работы</h1>
+    <p>Пирогов Илья, группа ПИЭ-31</p>
+  </header>
+  <nav>
+    <a href="#lab1">Лабораторная 2</a>
+    <a href="#lab2">Лабораторная 3</a>
+    <a href="#lab3">Лабораторная 4</a>
+    <a href="#lab4">Лабораторная 5</a>
+    <a href="#lab5">Лабораторная 6</a>
+    <a href="#lab6">Лабораторная 7</a>
+  </nav>
+  <main>
+    <section id="lab1">
+      <h2>Лабораторная работа 2: Операции с модулями</h2>
+      <p>Введите два ненулевых числа:</p>
+      <input type="number" id="num1" placeholder="Число 1">
+      <input type="number" id="num2" placeholder="Число 2">
+      <br>
+      <button onclick="calculateModules()">Рассчитать</button>
+      <div class="result" id="output"></div>
+    
+      <hr>
+      <h3>Сумма и произведение цифр трёхзначного числа</h3>
+      <p>Введите трёхзначное число:</p>
+      <input type="number" id="threeDigitInput" placeholder="Например: 123">
+      <br>
+      <button onclick="calculateDigits()">Рассчитать</button>
+      <div class="result" id="digitOutput"></div>
+    </section>
+
+    <section id="lab2">
+      <h2>Лабораторная работа 3</h2>
+      <p>Функционал подключается из <code>lab2.js</code></p>
+      <script src="lab2.js"></script>
+    </section>
+
+    <section id="lab3">
+      <h2>Лабораторная работа 4</h2>
+      <p>Функционал подключается из <code>lab3.js</code></p>
+      <script src="lab3.js"></script>
+    </section>
+
+    <section id="lab4">
+      <h2>Лабораторная работа 5</h2>
+      <p>Функционал подключается из <code>lab4.js</code></p>
+      <script src="lab4.js"></script>
+    </section>
+
+    <section id="lab5">
+      <h2>Лабораторная работа 6</h2>
+      <p>Функционал подключается из <code>lab5.js</code></p>
+      <script src="lab5.js"></script>
+    </section>
+
+    <section id="lab6">
+      <h2>Лабораторная работа 7</h2>
+      <p>Функционал подключается из <code>lab6.js</code></p>
+      <script src="lab6.js"></script>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
